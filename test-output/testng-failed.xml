@@ -7,10 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="LoginAppTest"/>
-          <include name="LoginLinkTest"/>
           <include name="teardown"/>
-          <include name="loginPageTittleTest"/>
-          <include name="ForgottenLinkTest"/>
         </methods>
       </class> <!-- com.qa.opencart.test.LoginPageTest -->
     </classes>

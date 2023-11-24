@@ -30,10 +30,8 @@ public class DriverFactory {
 			 prop = new Properties();
         		prop.load(fis);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+						e.printStackTrace();
 		} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 		}
 	 return prop;

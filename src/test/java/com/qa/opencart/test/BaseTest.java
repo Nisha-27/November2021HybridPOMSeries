@@ -8,6 +8,7 @@ import org.testng.annotations.AfterTest;
 
 
 import com.qa.opencart.factory.DriverFactory;
+import com.qa.opencart.pages.AccountsPage;
 import com.qa.opencart.pages.LoginPage;
 
 public class BaseTest {
@@ -16,6 +17,8 @@ public class BaseTest {
 	public WebDriver driver;
 	public LoginPage loginPage;
 	public Properties prop;
+	public AccountsPage accountpage; 
+
 	
 	@BeforeTest
 	
@@ -26,9 +29,10 @@ public class BaseTest {
 		driver = driverFactory.init_driver();
 		prop = driverFactory.init_prop();
 		loginPage = new LoginPage(driver);
+		accountpage = new AccountsPage(driver);
 	}
 	
-	@AfterTest
+	
 	
 	public void teardown() {
 		

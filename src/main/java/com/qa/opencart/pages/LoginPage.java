@@ -11,7 +11,7 @@ public class LoginPage {
 	
 	private By username = By.id("input-email");
 	private By password = By.id("input-password");
-	private By login = By.xpath("//*[@value='Login']");
+	private By login = By.xpath("//button[text()='Login']");
 	private By ForgottenPwdLink= By.xpath("//*[text()='Forgotten Password']");
 	private By loginLink = By.xpath("(//li/a[text()='Login'])[2]");
     
@@ -25,7 +25,7 @@ public class LoginPage {
 	}
 	
 	public String getLoginPageTitle() {
-		return elementUtils.getPageTitle();
+		return elementUtils.getPageTitle(); //string
 		
 	}
 	
@@ -38,12 +38,12 @@ public class LoginPage {
 	
 	public boolean LoginLinkExist() {
 		
-	return elementUtils.isElementDisplayed(loginLink);
+	return elementUtils.isElementDisplayed(loginLink); //true or false
 		
 	}
 	
 	public boolean forgottenPwdLinkExist() {
-		return elementUtils.isElementDisplayed(ForgottenPwdLink);
+		return elementUtils.isElementDisplayed(ForgottenPwdLink); //bool
 
 	}
 
